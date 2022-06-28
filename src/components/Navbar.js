@@ -7,7 +7,7 @@ const Navbar = ({ children }) => {
             <div className="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
-                    <div className="w-full navbar bg-base-100 px-24">
+                    <div className="w-full navbar bg-base-100 lg:px-24">
                         <div className="flex-1 px-2 mx-2 text-2xl">Clean Co.</div>
                         <div className="flex-none lg:hidden">
                             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -24,7 +24,7 @@ const Navbar = ({ children }) => {
                                 {/* <li><button data-toggle-theme="dark,light">Theme</button></li> */}
 
                                 <li className='dropdown dropdown-hover dropdown-end'>
-                                    <label tabIndex="0" className="btn btn-primary btn-outline rounded-lg m-1">
+                                    <label tabIndex="0" className="btn btn-primary btn-outline rounded-lg">
                                         Book Now
                                     </label>
                                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
