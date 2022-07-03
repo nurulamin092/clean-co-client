@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import PrivetRoute from "./authentication/PrivetRoute";
 import Service from './pages/Service';
 import { privateRouter } from "./routes/privateRoutes";
+import AdminRoute from "./authentication/AdminRoute";
+import Dashboard from "./pages/Dashboard/Dashboard";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -26,6 +28,9 @@ function App() {
               privateRouter.map(({ path, Component }, index) => (
                 <Route key={index} path={path} element={<Component />} />))
             }
+          </Route>
+          <Route element={<AdminRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
       </Navbar>
